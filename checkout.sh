@@ -20,7 +20,7 @@ if ! [ -d chromium ]; then
   cd chromium
 
   gclient config "https://chromium.googlesource.com/chromium/src.git"
-  echo 'target_os = ["android"]' >> .gclient
+  # echo 'target_os = ["android"]' >> .gclient
 
   git init -q src
   cd src
