@@ -2,8 +2,8 @@
 # SPDX-FileCopyrightText: 2021, microG Project Team
 # SPDX-License-Identifier: Apache-2.0
 
-CHROMIUM_TAG=91.0.4472.120
-CHROMIUM_REVISION=1deed0e8f4a3706fdcaf58d3d7604a64cfbceab8
+CHROMIUM_TAG=94.0.4594.1
+CHROMIUM_REVISION=1b6b1b928764f3c0c3cb9902ebe39d70c1c9e5cd
 
 ROOT=$PWD
 
