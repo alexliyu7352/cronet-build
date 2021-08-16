@@ -20,7 +20,7 @@ if ! [ -d chromium ]; then
   cd chromium
 
   gclient config "https://chromium.googlesource.com/chromium/src.git"
-  # echo 'target_os = ["android"]' >> .gclient
+  echo 'target_os = ["android"]' >> .gclient
 
   git init -q src
   cd src
@@ -37,3 +37,5 @@ git checkout "$CHROMIUM_REVISION"
 
 echo "## Running gclient sync..."
 gclient sync --no-history --nohooks --revision=$CHROMIUM_REVISION
+echo "## Install deps..."
+./build/install-build-deps-android.sh
