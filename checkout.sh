@@ -37,5 +37,5 @@ git checkout "$CHROMIUM_REVISION"
 
 echo "## Running gclient sync..."
 gclient sync --no-history --nohooks --revision=$CHROMIUM_REVISION
-echo "## Install deps..."
-./build/install-build-deps-android.sh
+# echo "## Install deps..."
+# ./build/install-build-deps-android.sh
