@@ -13,6 +13,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - name: Cache
+      uses: actions/cache@v2
+      with:
+          path: ./chromium
+          key: 92.0.4515.115
     - name: checkout
       run: ./checkout.sh
     - name: build
